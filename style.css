@@ -26,15 +26,6 @@ body {
     
 }
 
-/* .before-submit{
-    background-color: var(--dark-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-    padding: 1em;
-} */
-
 .card{
     background-color: var(--dark-blue);
     width: 25%;
@@ -95,7 +86,7 @@ ul li:hover{
     cursor: pointer;
 }
 
-ul li:focus-within{
+ul li:focus{
     background-color: var(--light-grey);
     color: var(--white);
 }
@@ -148,4 +139,10 @@ ul li:focus-within{
 
 .center-description{
     text-align: center;
+}
+
+@media (max-width: 450px){
+    .card{
+        width: 85%;
+    }
 }
