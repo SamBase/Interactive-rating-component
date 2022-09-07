@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange:hsl(25, 97%, 53%);
+    --white:hsl(0, 0%, 100%);
+    --light-grey:hsl(217, 12%, 63%);
+    --medium-grey:hsl(216, 12%, 54%, 0.205);
+    --dark-blue:hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .before-submit{
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding: 1em;
+} */
+.before-submit{
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-rows: repeat(5,auto);
+    row-gap: 1em;
+    width: 25%;
+    padding: 1.5em;
+    border-radius: 1em;
+}
+.star{
+
+}
+
+.round-icons{
+    background-color: var(--medium-grey);
+    border-radius: 50%;
+    padding: 0.7em;
+}
+
+.title{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.discription{
+    color: var(--light-grey);
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+.rating{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul li{
+    font-weight: 700;
+    color: var(--light-grey);
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+ul li:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button button{
+    border: none;
+    flex-grow: 1;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0.7em;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.submit-button button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+
+}
+.after-submit{
+    display: none;
+}

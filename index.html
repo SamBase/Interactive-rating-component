@@ -8,9 +8,11 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
+  <link rel="stylesheet" href="style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; align-self: end;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -19,7 +21,7 @@
   <!-- Rating state start -->
 
   <div class="before-submit">
-    <div class="star"></div>
+    <img class="star round-icons" src="./images/icon-star.svg" alt="" srcset="">
     <section class="title">
       How did we do?
     </section>
@@ -28,11 +30,11 @@
       to help us improve our offering!
     </section>
     <ul class="rating">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
+      <li class="round-icons">1</li>
+      <li class="round-icons">2</li>
+      <li class="round-icons">3</li>
+      <li class="round-icons">4</li>
+      <li class="round-icons">5</li>
     </ul>  
     <section class="submit-button">
       <button type="submit">
