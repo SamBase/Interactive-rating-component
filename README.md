@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/SamBase/Interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/javascript-y0IFXfjWX_)
+- Live Site URL: [GitHub Pages](https://sambase.github.io/Interactive-rating-component/)
 
 ## My process
 
