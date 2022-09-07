@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Interactive rating component</title>
 
   <link rel="stylesheet" href="style.css">
-
+  <script src="./script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; align-self: end;}
@@ -20,7 +20,7 @@
 
   <!-- Rating state start -->
 
-  <div class="card before-submit">
+  <div class="card" id="before-submit">
     <img class="star round-icons" src="./images/icon-star.svg" alt="" srcset="">
     <section class="title">
       How did we do?
@@ -30,14 +30,14 @@
       to help us improve our offering!
     </section>
     <ul class="rating">
-      <li class="round-icons">1</li>
-      <li class="round-icons">2</li>
-      <li class="round-icons">3</li>
-      <li class="round-icons">4</li>
-      <li class="round-icons">5</li>
+      <li class="round-icons" tabindex="0" value="1" onclick="ratingFunc(this)">1</li>
+      <li class="round-icons" tabindex="0" value="2" onclick="ratingFunc(this)">2</li>
+      <li class="round-icons" tabindex="0" value="3" onclick="ratingFunc(this)">3</li>
+      <li class="round-icons" tabindex="0" value="4" onclick="ratingFunc(this)">4</li>
+      <li class="round-icons" tabindex="0" value="5" onclick="ratingFunc(this)">5</li>
     </ul>  
-    <section class="submit-button">
-      <button type="submit">
+    <section class="submit-button" id="submit-btn">
+      <button type="submit" onclick="submitFunction()">
         Submit
       </button>
     </section>
@@ -47,16 +47,16 @@
 
   <!-- Thank you state start -->
 
-  <div class="card after-submit">
+  <div class="card" id="after-submit">
     <img class="phone-image" src="./images/illustration-thank-you.svg" alt="">
     <div class="rating-out-of">
-      You selected <!-- Add rating here --> out of 5
+      You selected <span id="rating-number"></span> out of 5
     </div>
     <div class="thank-you">
       Thank you!
     </div>
     <div class="discription center-description">
-      We appreciate you taking the time to give a rating. </br>If you ever need more support, 
+      We appreciate you taking the time to give a rating.</br>If you ever need more support, 
       don’t hesitate to get in touch!
     </div>
   </div>
@@ -66,7 +66,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/SamBase">SamBase</a>.
+  </div>>
 </body>
 </html>
